@@ -48,6 +48,7 @@ nav.scrolled {
 .nav-logo {
   display: flex;
   align-items: center;
+  gap: 0.6rem;
   text-decoration: none;
   height: 32px;
 }
@@ -56,6 +57,7 @@ nav.scrolled {
   height: 28px;
   width: auto;
   display: block;
+  filter: brightness(0) invert(1);
 }
 
 .nav-links {
@@ -463,6 +465,7 @@ footer {
   height: 20px;
   width: auto;
   opacity: 0.25;
+  filter: brightness(0) invert(1);
 }
 
 .footer-copy {
@@ -477,6 +480,7 @@ footer {
 <nav id="main-nav">
   <a href="#hero" class="nav-logo">
     <img src="highmark_logo.svg" alt="Highmark">
+    <span style="font-family:'Miranda Sans',sans-serif; font-weight:600; font-size:1.05rem; letter-spacing:-0.01em; color:white;">highmark</span>
   </a>
   <ul class="nav-links">
     <li><a href="#services">Services</a></li>
@@ -492,7 +496,7 @@ footer {
   <div class="hero-content">
     <div class="hero-wordmark">
       <div class="hero-mark">
-        <img src="highmark_logo.svg" alt="" style="height:120px; width:auto; opacity:0.92;">
+        <img src="highmark_logo.svg" alt="" style="height:110px; width:auto; opacity:0.95; filter: brightness(0) invert(1);">
       </div>
       <div class="hero-name">highmark</div>
     </div>
