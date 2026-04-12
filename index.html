@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Highmark</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Miranda+Sans:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Miranda+Sans:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap"></noscript>
 <link href="https://fonts.googleapis.com/css2?family=Miranda+Sans:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -109,16 +112,10 @@ nav.scrolled {
 .hero-image {
   position: absolute;
   inset: 0;
-  /*
-  ┌──────────────────────────────────────────────────────────────┐
-  │  YOUR HERO PHOTO                                             │
-  │  The file below should be in the same folder as this HTML.  │
-  │  Rename if your filename differs.                           │
-  └──────────────────────────────────────────────────────────────┘
-  */
-  background-image: url('elif-koyuturk-uNliRqlmBdg-unsplash.webp');
-  background-size: cover;
-  background-position: center 35%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
   transform: scale(1.04);
   transition: transform 9s ease-out;
 }
@@ -491,7 +488,12 @@ footer {
 </nav>
 
 <section id="hero">
-  <div class="hero-image" id="hero-img"></div>
+<img 
+  id="hero-img"
+  class="hero-image"
+  src="elif-koyuturk-uNliRqlmBdg-unsplash.webp"
+  fetchpriority="high"
+  alt="">
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="hero-wordmark">
