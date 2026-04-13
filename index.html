@@ -470,6 +470,94 @@ footer {
   letter-spacing: 0.04em;
   color: rgba(232,228,220,0.18);
 }
+
+@media (max-width: 768px) {
+
+  nav {
+    padding: 1rem 1.25rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-cta {
+    display: none;
+  }
+
+  #hero {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    padding: 0 1.25rem 3rem;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .hero-wordmark {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .hero-mark img {
+    height: 60px;
+  }
+
+  .hero-name {
+    font-size: 3.5rem;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .hero-right {
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+
+  .hero-tagline {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  #services .top {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .services-list {
+    grid-template-columns: 1fr;
+  }
+
+  .svc {
+    border-right: none;
+    padding-right: 0;
+  }
+
+  #process .proc-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .proc-step {
+    border-right: none;
+    padding-right: 0;
+    padding-bottom: 2rem;
+  }
+
+  #contact .contact-wrap {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  section {
+    padding: 4rem 1.25rem;
+  }
+
+}
 </style>
 </head>
 <body>
@@ -612,61 +700,6 @@ window.addEventListener('scroll', () => {
 }, { passive: true });
 
 setTimeout(() => document.getElementById('hero-img').classList.add('loaded'), 80);
-  @media (max-width: 768px) 
-  {
-
-  nav {
-    padding: 1rem 1.25rem;
-  }
-
-  .nav-links {
-    display: none;
-  }
-
-  .nav-cta {
-    display: none;
-  }
-
-  #hero {
-    justify-content: center;
-    align-items: center;
-  }
-
-  .hero-content {
-    grid-template-columns: 1fr;
-    padding: 0 1.25rem 3rem;
-    align-items: center;
-    justify-items: center;
-    text-align: center;
-  }
-
-  .hero-wordmark {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;
-  }
-
-  .hero-mark img {
-    height: 60px;
-  }
-
-  .hero-name {
-    font-size: 3.5rem;
-    white-space: normal;
-    text-align: center;
-  }
-
-  .hero-right {
-    align-items: center;
-    margin-top: 1.5rem;
-  }
-
-  .hero-tagline {
-    text-align: center;
-    max-width: 100%;
-  }
-
-}
 </script>
 
 </body>
